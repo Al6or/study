@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: #000;
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    font-family: 'PT Sans Narrow',Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button{
+    font: inherit;
+
+    text-align: center;
+    color:#fff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #000;
+    border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active{
+    background-color: #663d15;
+}
+
+.main-nav {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+
+    background-color: #000;
+}
+
+.site-nav,
+.sign-in {
+    list-style: none;
+}
+
+.site-nav a,
+.sign-in a{
+    color: #fff;
+}
+
+.site-nav a:hover,
+.sign-in a:hover,
+.site-nav a:focus,
+.sign-in a:focus{
+    background-color: #242424;
+}
+
+.benefits-list{
+    list-style: none;
+}
+
+.benefits-item{
+    text-align: center;
+}
+
+.benefits-item h3{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-columns{
+    color: #000;
+
+    background-color: #f8f5f2;
+    background-image: url(../img/bg-columns.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.index-columns h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-list{
+    list-style: none;
+}
+
+.news-list time{
+    text-transform: none;
+}
+
+.gallery-content{
+    background-color: #ccc;
+    border: 7px solid #fff;
+}
+
+.record-item input{
+    font:inherit;
+
+    background-color: transparent;
+    border: 2px solid #000 ;
+}
+
+.record-item input:focus{
+    border-color: #663d15;
+}
+
+.main-footer{
+    color: #fff;
+
+    background-color: #222;
+    background-image: url(../img/bg-footer.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.footer-contacts a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus{
+    text-decoration: none;
+}
+.footer-social{
+    text-align: center;
+}
+
+.footer-social a{
+    color: #fff;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-copyright{
+    text-align: center;
+}
+.footer-copyright .button:hover,
+.footer-copyright .button:focus{
+    color: #000;
+    background-color: #fff;
+}
+
+.modal{
+    color: #000;
+
+    background-color: #f8f3f0;
+    background-image: url("../img/bg-columns.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.modal h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.sig-in-form input[type="login"],
+.sig-in-form input[type="password"]{
+    font: inherit;
+    color: #000;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border:2px solid #000;
+}
+
+.restore a{
+    color: #000;
+    text-decoration: underline;
+}
+
+.restore a:hover,
+.restore a:focus{
+    text-decoration: none;
+}
+
