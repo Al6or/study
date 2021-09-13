@@ -100,7 +100,9 @@ a {
 }
 
 .button{
+    font-family: "Roboto","Arial",sans-serif;
     font-weight: 500;
+    font-size: 16px;
     color: #fff;
     line-height: 18px;    
     text-transform: uppercase;
@@ -151,6 +153,76 @@ a {
     background-color: #e5a722; 
 }
 
+.button-gray{
+    color: #000;
+
+    background-color: #eee;
+    border:none;
+}
+
+.button-gray:hover,
+.button-gray:focus{
+    color: #000;
+    background-color: #dfdfdf; 
+}
+.button-gray:active{
+    color:rgba(0,0,0, .3);
+
+    border-top: 3px solid #bfbfbf;
+    background-color: #d5d5d5; 
+}
+
+.button-price{
+    background-color: #fb565a; 
+}
+
+.button-price:hover,
+.button-price:focus{
+    background-color: #e74246; 
+}
+.button-price:active{
+    border-top: 3px solid #c13135;
+    background-color: #d7373b; 
+}
+
+.pagination-list{
+    list-style: none;
+}
+
+.pagination-item a{
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    line-height: 18px;    
+    text-transform: uppercase;   
+
+    background-color: #eee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus{
+    color: #000;
+    background-color: #dfdfdf; 
+}
+.pagination-item a:active{
+    color:rgba(0,0,0, .3);
+
+    border-top: 3px solid #bfbfbf;
+    background-color: #d5d5d5; 
+}
+
+.pagination-item-current a{
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    line-height: 18px;    
+    text-transform: uppercase;   
+
+    background-color: #fff;
+    border: 2px solid #dbdbdb;
+}
 
 .benefits{
     background-color: #eee;
@@ -164,10 +236,15 @@ a {
     list-style: none;
 }
 
-.tagline{
+.tagline,
+.page-title h1{
     font-weight: 500;
     font-size: 55px;    
     line-height: 55px;
+}
+
+.page-title{
+    background-color:#eee ;
 }
 
 .rede{
@@ -321,3 +398,116 @@ a {
     
     border: 2px solid #e74246;
 }
+
+
+
+.filter{
+    color:#283136;
+}
+.filter-form fieldset{
+    border: none;
+}
+
+.filter-form legend{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+
+.price-list,
+.grid-list,
+.special-list{
+    list-style: none;
+}
+
+.price-item label{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+
+.price-item input[type="text"]{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+
+    background-color: #eeeeee;
+    border: none;
+}
+
+.grid-item label{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.sort-list{
+    list-style: none;
+}
+
+.sort-item a{
+    color: rgba(0,0,0, .3);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.sort-item a:hover,
+.sort-item a:focus{
+    color: rgba(0,0,0, .6);
+}
+
+.sort-item a:active{
+    color: #000;
+}
+
+.sort-button{
+    list-style: none;
+}
+
+.sort-bottom a,
+.sort-top a{
+    color: rgba(166,166,166, .2);
+}
+
+.sort-bottom a:hover,
+.sort-top a:hover,
+.sort-bottom a:focus,
+.sort-top a:focus{
+    color: rgba(166,166,166);
+}
+
+.sort-bottom a:active,
+.sort-top a:active{
+    color: #231f20;
+}
+
+.template-list{
+    list-style: none;
+}
+
+.template-item p{
+    color: #666666;
+}
+
+.template-header a{
+    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.template-header a:hover,
+.template-header a:focus{
+    color: #fb565a;
+}
+
+.template-header a:active{
+    color: #b2b2b2;
+}
+
