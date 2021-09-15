@@ -15,23 +15,27 @@
             <a class="main-logo">
                 <img src="img/index-logo.svg" width="368" height="184">
             </a>
-            <ul class="site-nav">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="price.html">Прайс-лист</a></li>
-                <li><a href="market.html">Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <ul class="sign-in-nav">
-                <li><a class="login-link" href="login.html">Войти</a></li>
-            </ul>
+            <div class="main-nav-wrapper">
+                <div class="container">
+                    <ul class="site-nav">
+                        <li><a href="info.html">Информация</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="price.html">Прайс-лист</a></li>
+                        <li><a href="market.html">Магазин</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <ul class="sign-in-nav">
+                        <li><a class="login-link" href="login.html">Войти</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="container">
 
         <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
-        
+
         <section class="benefits">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="benefits-list">
@@ -80,7 +84,7 @@
                 </ul>
                 <a class="button" href="news.html">Все новости</a>
             </section>
-    
+
             <section class="gallery">
                 <h2>Фотогалерея</h2>
                 <figure class="gallery-content">
@@ -109,7 +113,7 @@
                 <a class="button" href="map.html">Как проехать</a>
                 <a class="button" href="contacts.html">Обратная связь</a>
             </section>
-    
+
             <section class="record">
                 <h2>Записаться</h2>
                 <p>
@@ -135,32 +139,33 @@
                     </p>
                     <button class="button" type="submit">Отправить</button>
                 </form>
-            </section> 
-        </div>  
+            </section>
+        </div>
 
     </main>
 
     <footer class="main-footer">
-        <p class="footer-contacts">Барбершоп «Бородинский»<br>
-            Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a href="map.html">Как нас найти?</a><br>
-            Телефон: +7 (495) 666-02-66
-        </p>
+        <div class="container">
+            <p class="footer-contacts">Барбершоп «Бородинский»<br>
+                Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                <a href="map.html">Как нас найти?</a><br>
+                Телефон: +7 (495) 666-02-66
+            </p>
 
-        <div class="footer-social">
-            <p>Давайте дружить!</p>
-            <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
-            </ul>
+            <div class="footer-social">
+                <p>Давайте дружить!</p>
+                <ul>
+                    <li><a class="social-button" href="#">Вконтакте</a></li>
+                    <li><a class="social-button" href="#">Фейсбук</a></li>
+                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                </ul>
+            </div>
+
+            <p class="footer-copyright">
+                <b>Разработано:</b>
+                <a class="button" href="#">Борисова А.Е.</a>
+            </p>
         </div>
-
-        <p class="footer-copyright">
-            <b>Разработано:</b>
-            <a class="button" href="#">Борисова А.Е.</a>
-        </p>
-        
     </footer>
 
     <section class="modal modal-sig-in">
@@ -173,15 +178,15 @@
             </p>
             <p>
                 <label class="visually-hidden" for="form-sign-up-password">Пароль</label>
-                <input name="password" id="form-sign-up-password" type="password"  placeholder="********">
+                <input name="password" id="form-sign-up-password" type="password" placeholder="********">
             </p>
             <p class="restore">
-                <input name="remember" id="form-sign-up-remember" type="checkbox" >
+                <input name="remember" id="form-sign-up-remember" type="checkbox">
                 <label for="form-sign-up-remember">Запомнить меня</label>
                 <a href="#">Я забыл пароль!</a>
             </p>
             <button class="button" type="submit">Войти</button>
-        </form>        
+        </form>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
 
