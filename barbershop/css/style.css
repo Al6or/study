@@ -576,6 +576,20 @@ a {
     min-height: 47px;
 }
 
+.product-photos{
+    width: 460px;
+
+    /*vr*/
+    min-height: 677px;
+}
+
+.product-info{
+    width: 390px;
+
+    /*vr*/
+    min-height: 667px;
+}
+
 .pagination-item a{
     color: #fff;
     background-color: #000;
