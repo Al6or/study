@@ -15,6 +15,16 @@ body{
     text-transform: uppercase;
 }
 /*Сетки*/
+.inner-page{
+    color: #000;
+
+    background-color: #f8f5f2;
+    background-image: url(../img/bg-columns.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+/*Сетки*/
 .container{
     width: 940px;
     margin: 0 auto;
@@ -37,14 +47,7 @@ a {
     overflow: hidden;
 }
 
-.inner-page{
-    color: #000;
 
-    background-color: #f8f5f2;
-    background-image: url(../img/bg-columns.jpg);
-    background-position: 0 0;
-    background-repeat: repeat;
-}
 
 .button{
     font: inherit;
@@ -73,6 +76,16 @@ a {
 }
 
 /*Сетки*/
+.inner-page .main-header{
+    margin-bottom: 50px;
+
+    background-color: #000;
+
+    /*Временно для сетки*/
+    min-height: 70px;
+}
+
+/*Сетки*/
 .main-nav {
     font-size: 16px;
     line-height: 20px;
@@ -88,6 +101,14 @@ a {
      background-color: transparent;
 }
 
+/*Сетки*/
+.inner-page .main-nav{
+    align-items: flex-start;
+    flex-direction: row;
+
+     /*Временно для сетки*/
+    min-height: 70px;
+}
 
 /*Сетки*/
 .main-logo{
@@ -97,6 +118,15 @@ a {
 
     /*Временно для сетки*/
     /*display: block;*/
+}
+
+/*Сетки*/
+.inner-page .main-logo{
+    order: 0;
+
+    width: 111px;
+    height: 24px;
+    padding: 23px 20px;
 }
 
 /*Сетки*/
@@ -140,6 +170,10 @@ a {
     min-height: 70px;
 }
 
+.inner-page .sign-in-nav{
+    margin-left: auto;
+}
+
 .site-nav a,
 .sign-in-nav a{
     color: #fff;
@@ -152,8 +186,15 @@ a {
     background-color: #242424;
 }
 
+/*Сетки*/
 .breadcrumbs{
     list-style: none;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    /*vr*/
+    min-height: 24px;
 }
 
 .breadcrumbs a{
@@ -169,7 +210,11 @@ a {
     color: #aba9a7;
 }
 
-
+/*Сетки*/
+.catalog-columns{
+    display: flex;
+    justify-content: space-between;
+}
 
 /*Сетки*/
 .benefits{
@@ -292,6 +337,9 @@ a {
     min-height: 180px;
 }
 
+.inner-page .main-footer {
+    margin-top: 45px;
+}
 
 /*Сетки*/
 .main-footer .container{
@@ -387,9 +435,16 @@ a {
     text-decoration: none;
 }
 
+/*Сетки*/
 .page-title{
     font-size: 30px;
     line-height: 42px;
+
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    /*vr*/
+    min-height: 42px;
 }
 
 .product-photo-preview{
@@ -425,6 +480,20 @@ a {
     list-style: none;
 }
 
+.filter{
+     width: 180px;
+
+     /*vr*/
+     min-height: 687px;
+}
+
+.catalog{
+    width: 700px;
+
+    /*vr*/
+    min-height: 687px;
+}
+
 .filter fieldset{
     border: none;
 }
@@ -450,12 +519,29 @@ a {
 }
 
 .catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+
     list-style: none;
 }
 
 .catalog-item{
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    /*vr*/
+    min-height: 285px;
+
     background-color: #f8f8f8;
     box-shadow: 0 0 10px rgba(0,0,0, .1);
+}
+
+.catalog-item:nth-child(3n){
+    margin-right: 0;
 }
 
 .catalog-item:hover{
@@ -481,7 +567,13 @@ a {
 }
 
 .pagination-list{
+    padding: 0;
+    margin: 0;
+
     list-style: none;
+
+    /*vr*/
+    min-height: 47px;
 }
 
 .pagination-item a{
