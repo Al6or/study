@@ -48,6 +48,12 @@ a {
     text-decoration: none;
 }
 
+.container{
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -60,7 +66,12 @@ a {
     overflow: hidden;
 }
 
+/*setki*/
 .main-nav{
+    display: flex;   
+    justify-content: space-between;
+    align-items: flex-end;
+
     line-height: 30px;
     text-transform: uppercase;
 
@@ -69,6 +80,28 @@ a {
 
 .main-nav a{
     color: #000;
+}
+
+.main-header{
+    background-color: #eee;
+}
+
+/*setki*/
+.main-nav-wrapper{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    background-color: #eee;
+    /*vr*/
+    min-height: 115px;
+}
+
+/*setki*/
+.main-logo{
+    width: 160px;
+    height: 65px;
 }
 
 .main-logo img:hover,
@@ -80,10 +113,10 @@ a {
     filter: opacity(30%);
 }
 
+
 .site-nav,
 .basket-nav{
     font-weight: 500;
-
     list-style: none;        
 }
 
