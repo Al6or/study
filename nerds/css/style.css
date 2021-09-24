@@ -313,7 +313,17 @@ a {
 }
 
 .page-title{
+    margin-bottom: 63px;
+    
     background-color:#eee ;
+}
+
+.page-title .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 241px;
 }
 
 .rede{
@@ -456,6 +466,15 @@ a {
     flex-direction: column;
 }
 
+.inner-page .main-footer{
+    margin-top: 60px;
+}
+
+.catalog-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-social{
     display: flex;
     align-items: center;
@@ -557,6 +576,8 @@ a {
 
 
 .filter{
+    width: 260px;
+
     color:#283136;
 }
 .filter-form fieldset{
@@ -643,13 +664,33 @@ a {
     color: #231f20;
 }
 
+.template{
+    width: 760px;
+}
+
 .template-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
+}
+.template-item{
+    width: 360px;
+    margin-right: 40px;
+    /*vr*/
+    min-height: 614px;
+}
+
+.template-item:nth-child(2n){
+    margin-right: 0;
 }
 
 .template-item p{
     color: #666666;
 }
+
 
 .template-header a{
     color: #000;
@@ -664,6 +705,14 @@ a {
 
 .template-header a:active{
     color: #b2b2b2;
+}
+
+.head-sort{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
 /*пробная карусель/слайдер*/
