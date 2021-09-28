@@ -14,6 +14,13 @@ body{
     color: #fff;
     text-transform: uppercase;
 }
+
+
+img{
+    max-width: 100%;
+    height: auto;   
+}
+
 /*Сетки*/
 .inner-page{
     color: #000;
@@ -50,8 +57,11 @@ a {
 
 
 .button{
-    font: inherit;
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 30px;
 
+    font: inherit;
     text-align: center;
     color:#fff;
     vertical-align: middle;
@@ -67,12 +77,15 @@ a {
     background-color: #663d15;
 }
 
-/*Сетки*/
+.button.disabled,
+.button:disabled{
+    cursor: default;
+    opacity: .5;
+    background-color: #000;
+}
+
 .main-header{
     margin-bottom: 75px;
-
-    /*Временно для сетки*/
-    min-height: 285px;
 }
 
 /*Сетки*/
@@ -115,9 +128,6 @@ a {
     order: 2;
     width: 368px;
     height: 153px;
-
-    /*Временно для сетки*/
-    /*display: block;*/
 }
 
 /*Сетки*/
@@ -135,9 +145,6 @@ a {
     margin-bottom: 60px;
     
     background-color: #000;
-    /*Временно для сетки*/
-    min-height: 70px;
-    background-color: transparent;
 }
 
 /*Сетки*/
@@ -148,6 +155,8 @@ a {
 
 /*Сетки*/
 .site-nav {
+    display: flex;
+    flex-wrap: wrap;
     width: 620px;
     margin: 0;
     padding: 0;
@@ -160,6 +169,7 @@ a {
 
 /*Сетки*/
 .sign-in-nav{
+    display: flex;
     width: 140px;
     margin: 0;
     padding: 0;
@@ -170,12 +180,43 @@ a {
     min-height: 70px;
 }
 
+.sign-in-nav .login-link{
+    position: relative;
+    padding-left: 50px;
+}
+
+.login-link::before{
+    content: "";
+
+    position: absolute;
+    top: 27px;
+    left: 24px;
+
+    width: 16px;
+    height: 18px;
+
+    background-image: url("../img/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+    opacity: 1;
+}
+
 .inner-page .sign-in-nav{
     margin-left: auto;
 }
 
 .site-nav a,
 .sign-in-nav a{
+    display: block;
+    padding: 25px 20px;
+    
     color: #fff;
 }
 
@@ -243,75 +284,168 @@ a {
 }
 
 .benefits-item h3{
+    position: relative;
+
+    margin: 0;
+    margin-bottom: 60px;
+
     font-size: 30px;
     line-height: 42px;
+}
+
+.benefits-item h3::after{
+    content: "";
+
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+
+    background-color: #fff;
+
+    transform: rotate(45deg);
+}
+
+.benefits-item p{
+    margin: 0 10px;
 }
 
 /*Сетки*/
 .index-columns{
-    color: #000;
-
-    background-color: #f8f5f2;
-    background-image: url(../img/bg-columns.jpg);
-    background-position: 0 0;
-    background-repeat: repeat;
-
     display: flex;
     justify-content: space-between;
     padding: 50px 80px;
     margin-bottom: 35px;
-     /*Временно для сетки*/
-    /* background-image: none;
-     background-color: transparent;*/
+
+    color: #000;
+
+    background-color: #f8f5f2;
+    background-image: 
+        url(../img/line.png),
+        url(../img/bg-columns.jpg);
+    background-position: center, 0 0;
+    background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2{
+    margin: 0;
+    margin-bottom: 25px;
+
     font-size: 30px;
     line-height: 42px;
 }
 
-/*Сетки*/
 .news{
     width: 380px;
-    /*Временно для сетки*/
-    min-height: 315px;
 }
 
 .news-list{
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+
     list-style: none;
+}
+
+.news-item{
+    margin-bottom: 25px;
+}
+
+.news-item p{
+    margin: 0;
 }
 
 .news-list time{
     text-transform: none;
 }
 
-/*Сетки*/
 .gallery{
     width: 300px;
-    /*Временно для сетки*/
-    min-height: 315px;
+}
+
+.gallery-button{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-button-back{
+    left: 0;
+}
+
+.gallery-button-next{
+    right: 0;
+}
+
+.gallery-container{
+    position: relative;
+
+    height: 260px;
 }
 
 .gallery-content{
+    height: 164px;
+    margin: 0;
+
     background-color: #ccc;
     border: 7px solid #fff;
 }
 
-/*Сетки*/
-.contacts{
-    width: 380px;
-    /*Временно для сетки*/
-    min-height: 295px;
+.gallery-content img{
+    width: 286px;
+    height: 164px;
 }
 
-/*Сетки*/
+.contacts{
+    width: 380px;
+}
+
+.contacts p{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
 .record{
     width: 300px;
-    /*Временно для сетки*/
-    min-height: 340px;
+}
+
+.record-info{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.record-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.record-item {
+    width: 140px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.record-item label{
+    display: block;
+    margin-bottom: 9px;
+    margin-left: 15px;
 }
 
 .record-item input{
+    box-sizing: border-box;
+    width: 140px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+    
     font:inherit;
 
     background-color: transparent;
@@ -320,6 +454,13 @@ a {
 
 .record-item input:focus{
     border-color: #663d15;
+}
+
+.record .button{
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
 }
 
 /*Сетки*/
@@ -348,12 +489,9 @@ a {
 
 /*Сетки*/
 .footer-contacts{
-    margin-right: 80px;
     width: 320px;
-    margin: 0;
-
-    /*Временно для сетки*/
-    min-height: 100px;
+    margin: 0;    
+    margin-right: 80px;
 }
 
 .footer-contacts a{
@@ -366,14 +504,10 @@ a {
     text-decoration: none;
 }
 
-/*Сетки*/
 .footer-social{
     width: 145px;
     
     text-align: center;
-
-    /*Временно для сетки*/
-    min-height: 100px;
 }
 
 .footer-social a{
@@ -381,24 +515,63 @@ a {
 }
 
 .footer-social ul {
+    display: flex;
+    width: 141px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+
     list-style: none;
 }
 
-/*Сетки*/
+.footer-social b{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    margin-bottom: 10px;
+
+    background-color: #000;
+}
+
+.social-button:hover,
+.social-button:focus{
+    background-color: #fff;
+}
+
+.social-button:hover path,
+.social-button:focus path{
+    fill: #000;
+}
+
 .footer-copyright{
     text-align: center;
-
     width: 150px;
     margin: 0;
     margin-left: auto;
-
-    /*Временно для сетки*/
-    min-height: 100px;
 }
+
+.footer-copyright .button{
+    display: block;
+    margin: 0;
+}
+
 .footer-copyright .button:hover,
 .footer-copyright .button:focus{
     color: #000;
     background-color: #fff;
+}
+
+.footer-copyright b{    
+    display: block;
+    margin-bottom: 15px;
 }
 
 .modal{
