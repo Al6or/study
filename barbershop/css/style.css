@@ -21,7 +21,6 @@ img{
     height: auto;   
 }
 
-/*Сетки*/
 .inner-page{
     color: #000;
 
@@ -31,7 +30,6 @@ img{
     background-repeat: repeat;
 }
 
-/*Сетки*/
 .container{
     width: 940px;
     margin: 0 auto;
@@ -88,17 +86,12 @@ a {
     margin-bottom: 75px;
 }
 
-/*Сетки*/
 .inner-page .main-header{
     margin-bottom: 50px;
 
     background-color: #000;
-
-    /*Временно для сетки*/
-    min-height: 70px;
 }
 
-/*Сетки*/
 .main-nav {
     font-size: 16px;
     line-height: 20px;
@@ -109,28 +102,21 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-     /*Временно для сетки*/
-     min-height: 285px;
-     background-color: transparent;
+
+    background-color: transparent;
 }
 
-/*Сетки*/
 .inner-page .main-nav{
     align-items: flex-start;
     flex-direction: row;
-
-     /*Временно для сетки*/
-    min-height: 70px;
 }
 
-/*Сетки*/
 .main-logo{
     order: 2;
     width: 368px;
     height: 153px;
 }
 
-/*Сетки*/
 .inner-page .main-logo{
     order: 0;
 
@@ -139,7 +125,7 @@ a {
     padding: 23px 20px;
 }
 
-/*Сетки*/
+
 .main-nav-wrapper{
     width: 100%;
     margin-bottom: 60px;
@@ -147,13 +133,11 @@ a {
     background-color: #000;
 }
 
-/*Сетки*/
 .main-nav-wrapper .container{
     display: flex;
     justify-content: space-between;
 }
 
-/*Сетки*/
 .site-nav {
     display: flex;
     flex-wrap: wrap;
@@ -162,12 +146,8 @@ a {
     padding: 0;
 
     list-style: none;
-
-   /*Временно для сетки*/
-    min-height: 70px;
 }
 
-/*Сетки*/
 .sign-in-nav{
     display: flex;
     width: 140px;
@@ -175,9 +155,6 @@ a {
     padding: 0;
 
     list-style: none;
-
-   /*Временно для сетки*/
-    min-height: 70px;
 }
 
 .sign-in-nav .login-link{
@@ -267,18 +244,15 @@ a {
     color: #aba9a7;
 }
 
-/*Сетки*/
 .catalog-columns{
     display: flex;
     justify-content: space-between;
 }
 
-/*Сетки*/
 .benefits{
     margin-bottom: 80px;
 }
 
-/*Сетки*/
 .benefits-list{
     margin: 0;
     padding: 0;
@@ -287,16 +261,12 @@ a {
 
     display: flex;
     justify-content: space-between;
-    /*Временно для сетки*/
-    min-height: 170px;
 }
-/*Сетки*/
+
 .benefits-item{
     text-align: center;
 
     width: 300px;
-    /*Временно для сетки*/
-    min-height: 170px;
 }
 
 .benefits-item h3{
@@ -329,7 +299,6 @@ a {
     margin: 0 10px;
 }
 
-/*Сетки*/
 .index-columns{
     display: flex;
     justify-content: space-between;
@@ -479,7 +448,6 @@ a {
     margin-right: 0;
 }
 
-/*Сетки*/
 .main-footer{
     color: #fff;
 
@@ -490,20 +458,17 @@ a {
 
     padding: 60px 0;
     margin-top: 65px;
-    /*Временно для сетки*/
-    min-height: 180px;
 }
 
 .inner-page .main-footer {
     margin-top: 45px;
 }
 
-/*Сетки*/
 .main-footer .container{
     display: flex;
 }
 
-/*Сетки*/
+
 .footer-contacts{
     width: 320px;
     margin: 0;    
@@ -624,7 +589,6 @@ a {
     text-decoration: none;
 }
 
-/*Сетки*/
 .page-title{
     font-size: 30px;
     line-height: 42px;
@@ -632,8 +596,6 @@ a {
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
-    /*vr*/
-    min-height: 42px;
 }
 
 .product-photo-preview{
@@ -918,55 +880,123 @@ a {
 }
 
 .tagline{
+    position: relative;
     font-size: 48px;
     line-height: 48px;
-    margin-top: 60px;
-    margin-bottom: 77px;
+    margin-top: 38px;
+    margin-bottom: 64px;
+    margin-left: 186px;
+}
+
+.tagline::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 160px;
+    top: 24px;
+    height: 2px;
+
+    background-color: #000;
+}
+
+.tagline::after{
+    content: "";
+    position: absolute;
+    left: -186px;
+    width: 160px;
+    top: 24px;
+    height: 2px;
+
+    background-color: #000;
 }
 
 .use-funds{
+    position: relative;
     width: 380px;
     margin-bottom: 70px;
+}
 
-    /*vr*/
-    min-height: 215px;
+.use-funds ul{
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.use-funds li{
+    margin-bottom: 13px;
+}
+
+.use-funds li::before{
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    margin-top: 8px;
+    margin-left: -18px;
+    background-color: #000;
+    transform: rotate(45deg);
 }
 
 .use-funds h3{
+    margin: 0;
+    margin-bottom: 31px;
+
     font-size: 24px;
     line-height: 30px;
 }
 
 .price-services{
     width: 460px;
-
-    /*vr*/
-    min-height: 320pxs;
 }
 
 .price-services h3{
+    margin: 0;
+    margin-bottom: 39px;
+
     font-size: 24px;
     line-height: 30px;
 }
 
+.price-services table{        
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.price-services td{
+    width: 227px;
+    padding: 0;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+}
+
+.price-services td:nth-child(2n){
+    text-align: center;    
+    padding-left: 0;
+}
+
 .price-services table,
 .price-services td{
-    border: 1px solid #000;
-    border-spacing: 0;
+    border: 2px solid #000;
+}
+
+.few-words{
+    margin-bottom: 78px;
 }
 
 .few-words h3{
+    margin: 0;
+    margin-bottom: 34px;
+
     font-size: 24px;
     line-height: 30px;
 }
 
 .description{
+    margin: 0;
     width: 380px;
     margin-right: 100px;
-    margin-bottom: 84px;
-
-    /*vr*/
-    min-height: 90px;
 }
 
 .description:nth-child(2n){
