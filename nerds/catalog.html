@@ -15,7 +15,7 @@
                 <a class="main-logo" href="index.html">
                     <img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Nerds»" width="160" height="67">
                 </a>
-    
+
                 <div class="main-nav-wrapper">
                     <ul class="site-nav">
                         <li><a href="#">Студия</a></li>
@@ -37,32 +37,32 @@
         <div class="page-title">
             <div class="container">
                 <h1 class="tagline">Магазин готовых шаблонов</h1>
-            </div>            
-        </div> 
+            </div>
+        </div>
 
         <div class="catalog-columns container">
             <section class="filter">
                 <h2 class="visually-hidden">Фильтрация</h2>
                 <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
                     <fieldset class="price">
-                        <legend>Стоимость:</legend>
+                        <legend class="head-fieldset">Стоимость:</legend>
                         <ul class="price-list">
-                            <li class="price-item">
-                                <input id="fl-price-range" type="range" name="range" value="range">
+                            <li class="price-range">
+                                <input class="button-range" id="fl-price-range" type="range" name="range" value="range">
                                 <label class="visually-hidden" for="fl-price-range">Диапазон</label>
                             </li>
-                            <li class="price-item">
+                            <li class="price-item price-start">
                                 <label for="fl-price-start">От</label>
                                 <input id="fl-price-start" type="text" name="start" placeholder="0">
                             </li>
-                            <li class="price-item">
+                            <li class="price-item price-end">
                                 <label for="fl-price-end">До</label>
                                 <input id="fl-price-end" type="text" name="end" placeholder="15 000">
                             </li>
                         </ul>
                     </fieldset>
                     <fieldset class="grid">
-                        <legend>Сетка:</legend>
+                        <legend class="head-fieldset">Сетка:</legend>
                         <ul class="grid-list">
                             <li class="grid-item">
                                 <input id="fl-grid-adaptive" type="radio" name="fl-grid" value="adaptive">
@@ -79,7 +79,7 @@
                         </ul>
                     </fieldset>
                     <fieldset class="special">
-                        <legend>Особенности:</legend>
+                        <legend class="head-fieldset">Особенности:</legend>
                         <ul class="special-list">
                             <li class="special-item">
                                 <input id="fl-features-slider" type="checkbox" name="slider">
@@ -106,23 +106,41 @@
                     <button class="button button-gray" type="submit">Показать</button>
                 </form>
             </section>
-            
+
             <section class="template">
                 <h2 class="visually-hidden">Список товаров</h2>
-                <p class="head-sort">Сортировать:</p>
-                <ul class="sort-list">
-                    <li class="sort-item"><a enadled href="#">По цене</a></li>
-                    <li class="sort-item"><a href="#">По типу</a></li>
-                    <li class="sort-item"><a href="#">По названию</a></li>
-                </ul>
-                <ul class="sort-button">
-                    <li class="sort-bottom"><a href="#">По возрастанию</a></li>
-                    <li class="sort-top"><a href="#">По убыванию</a></li>
-                </ul>
-    
+
+                <fieldset class="template-sort">
+                    <p class="head-fieldset">Сортировать:</p>
+                    <div class="sort">
+                        <ul class="sort-list">
+                            <li class="sort-list-item"><a enadled href="#">По цене</a></li>
+                            <li class="sort-list-item"><a href="#">По типу</a></li>
+                            <li class="sort-list-item"><a href="#">По названию</a></li>
+                        </ul>
+                        <ul class="sort-button">
+                            <li class="sort-button-item">
+                                <a class="sort-bottom" href="#">
+                                    <span class="visually-hidden">
+                                        По возрастанию
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="sort-button-item">
+                                <a class="sort-top" href="#">
+                                    <span class="visually-hidden">
+                                        По убыванию
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+
+
                 <ul class="template-list">
                     <li class="template-item">
-                        <div>
+                        <div class="template-price">
                             <h3 class="template-header">
                                 <a href="#">Sedona</a>
                             </h3>
@@ -131,10 +149,13 @@
                             </p>
                             <a class="button button-price" href="#">9 900 РУБ.</a>
                         </div>
-                        <img src="img/img-sedona.jpg" alt="Шаблон Sedona" width="360" height="576">
+
+                        <a href="#" class="demo-template">
+                            <img src="img/img-sedona.jpg" alt="Шаблон Sedona" width="360" height="576">
+                        </a>
                     </li>
                     <li class="template-item">
-                        <div>
+                        <div class="template-price">
                             <h3 class="template-header">
                                 <a href="#">Pink app</a>
                             </h3>
@@ -143,10 +164,12 @@
                             </p>
                             <a class="button button-price" href="#">9 900 РУБ.</a>
                         </div>
-                        <img src="img/img-pink.jpg" alt="Шаблон Pink app" width="360" height="576">
+                        <a href="#" class="demo-template">
+                            <img src="img/img-pink.jpg" alt="Шаблон Pink app" width="360" height="576">
+                        </a>
                     </li>
                     <li class="template-item">
-                        <div>
+                        <div class="template-price">
                             <h3 class="template-header">
                                 <a href="http://10.223.112.219/study-htmlcss/level-one/tree/master/barbershop">
                                     Barbershop
@@ -157,10 +180,12 @@
                             </p>
                             <a class="button button-price" href="#">9 900 РУБ.</a>
                         </div>
-                        <img src="img/img-barbershop.jpg" alt="Шаблон Барбершоп" width="360" height="576">
+                        <a href="#" class="demo-template">
+                            <img src="img/img-barbershop.jpg" alt="Шаблон Барбершоп" width="360" height="576">
+                        </a>
                     </li>
                     <li class="template-item">
-                        <div>
+                        <div class="template-price">
                             <h3 class="template-header">
                                 <a href="#">Mishka</a>
                             </h3>
@@ -169,10 +194,12 @@
                             </p>
                             <a class="button button-price" href="#">9 900 РУБ.</a>
                         </div>
-                        <img src="img/img-mishka.jpg" alt="Шаблон Mishka" width="360" height="576">
+                        <a href="#" class="demo-template">
+                            <img src="img/img-mishka.jpg" alt="Шаблон Mishka" width="360" height="576">
+                        </a>
                     </li>
                     <li class="template-item">
-                        <div>
+                        <div class="template-price">
                             <h3 class="template-header">
                                 <a href="#">A plus</a>
                             </h3>
@@ -181,10 +208,12 @@
                             </p>
                             <a class="button button-price" href="#">9 900 РУБ.</a>
                         </div>
-                        <img src="img/img-aplus.jpg" alt="Шаблон A plus" width="360" height="576">
+                        <a href="#" class="demo-template">
+                            <img src="img/img-aplus.jpg" alt="Шаблон A plus" width="360" height="576">
+                        </a>
                     </li>
                     <li class="template-item">
-                        <div>
+                        <div class="template-price">
                             <h3 class="template-header">
                                 <a href="#">Кваст</a>
                             </h3>
@@ -193,10 +222,12 @@
                             </p>
                             <a class="button button-price" href="#">9 900 РУБ.</a>
                         </div>
-                        <img src="img/img-kvast.jpg" alt="Шаблон кваст" width="360" height="576">
+                        <a href="#" class="demo-template">
+                            <img src="img/img-kvast.jpg" alt="Шаблон кваст" width="360" height="576">
+                        </a>
                     </li>
                 </ul>
-    
+
                 <ul class="pagination-list">
                     <li class="pagination-item-current">
                         <a>1</a>
@@ -206,7 +237,7 @@
                     <li class="pagination-item"><a href="#">Следующая</a></li>
                 </ul>
             </section>
-        </div>       
+        </div>
     </main>
 
     <footer class="main-footer">
@@ -265,7 +296,7 @@
                 </div>
             </div>
         </div>
-    </footer>    
+    </footer>
 
     <section class="modal">
         <h2>Напишите нам</h2>
