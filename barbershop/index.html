@@ -194,30 +194,45 @@
 
     <section class="modal modal-sig-in">
         <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль</p>
+        <p class="modal-description">Введите свой логин и пароль</p>
         <form class="sig-in-form" action="https://echo.htmlacademy.ru" method="POST">
             <p>
                 <label class="visually-hidden" for="form-sign-up-login">Логин</label>
-                <input name="login" id="form-sign-up-login" type="login" placeholder="Логин">
+                <input class="sig-in-icon-user" name="login" id="form-sign-up-login" type="login"
+                    placeholder="email@email.com">
             </p>
             <p>
                 <label class="visually-hidden" for="form-sign-up-password">Пароль</label>
-                <input name="password" id="form-sign-up-password" type="password" placeholder="********">
+                <input class="sig-in-icon-password" name="password" id="form-sign-up-password" type="password"
+                    placeholder="********">
             </p>
-            <p class="restore">
-                <input name="remember" id="form-sign-up-remember" type="checkbox">
-                <label for="form-sign-up-remember">Запомнить меня</label>
-                <a href="#">Я забыл пароль!</a>
+            <p class="sig-in-help">
+                <label class="sig-in-checkbox" for="form-sign-up-remember">
+                    <input class="visually-hidden" name="remember" id="form-sign-up-remember" type="checkbox">
+                    <span class="checkbox-indicator"></span>
+                    Запомнить меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
             </p>
             <button class="button" type="submit">Войти</button>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button">
+            <span class="visually-hidden">
+                Закрыть
+            </span>
+        </button>
     </section>
 
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img\map.jpg" alt="Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8" width="1739" height="784">
-        <button class="modal-close" type="button">Закрыть</button>
+        <p>
+            <img src="img\map.jpg" alt="Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8" width="1739" height="784">
+        </p>
+        <button class="modal-close" type="button">
+            <span class="visually-hidden">
+                Закрыть
+            </span>
+        </button>
     </section>
 </body>
 

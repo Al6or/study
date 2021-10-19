@@ -555,19 +555,7 @@ a {
     margin-bottom: 15px;
 }
 
-.modal{
-    color: #000;
 
-    background-color: #f8f3f0;
-    background-image: url("../img/bg-columns.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
-}
-
-.modal h2{
-    font-size: 30px;
-    line-height: 42px;
-}
 
 .sig-in-form input[type="login"],
 .sig-in-form input[type="password"]{
@@ -579,15 +567,7 @@ a {
     border:2px solid #000;
 }
 
-.restore a{
-    color: #000;
-    text-decoration: underline;
-}
 
-.restore a:hover,
-.restore a:focus{
-    text-decoration: none;
-}
 
 .page-title{
     font-size: 30px;
@@ -735,6 +715,100 @@ a {
     opacity: .5;
 }
 
+.label-checkbox{
+    display: block;
+    position: relative;
+    padding-left: 43px;
+
+    cursor: pointer;
+}
+
+.label-checkbox:focus,
+.label-checkbox:hover{
+    color: #663d15;
+}
+
+input[type="checkbox"] + label .indicator-checkbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #000;
+}
+
+input[type="checkbox"]:focus + label .indicator-checkbox{
+    border-color: #663d15;
+    outline:  0 auto -webkit-focus-ring-color;
+}
+
+input[type="checkbox"]:checked + label .indicator-checkbox::before,
+input[type="checkbox"]:checked + label .indicator-checkbox::after{
+    content: '';
+
+    position: absolute;
+    top: 7px;
+    left: 1px;
+
+    width: 14px;
+    height: 2px;
+
+    background-color: #000;
+}
+input[type="checkbox"]:checked + label .indicator-checkbox::before{
+    transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked + label .indicator-checkbox::after{
+    transform: rotate(-45deg);
+}
+
+.label-radio{
+    display: block;
+    position: relative;
+    padding-left: 43px;
+
+    cursor: pointer;
+}
+
+.label-radio:focus,
+.label-radio:hover{
+    color: #663d15;
+}
+
+input[type="radio"] + label .indicator-radio{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+input[type="radio"]:focus + label .indicator-radio{
+    border-color: #663d15;
+    outline:  0 auto -webkit-focus-ring-color;
+}
+
+input[type="radio"]:checked + label .indicator-radio::before{
+    content: '';
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    
+    width: 8px;
+    height: 8px;
+
+    background-color: #000;
+    border-radius: 4px;
+}
+
 .brand{    
     padding: 0;
     margin: 0;
@@ -879,35 +953,37 @@ a {
     background-color: #fff;
 }
 
-.tagline{
-    position: relative;
-    font-size: 48px;
-    line-height: 48px;
+.tagline{   
     margin-top: 38px;
     margin-bottom: 64px;
-    margin-left: 186px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.tagline::before,
+.tagline::after{
+    content: "";
+
+    flex-grow: 1;
+    flex-shrink: 0;
+    
+    width: 50px;
+    height: 2px;
+
+    background-color: #000;
 }
 
 .tagline::before{
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 160px;
-    top: 24px;
-    height: 2px;
-
-    background-color: #000;
+    margin-right: 25px;
 }
 
 .tagline::after{
-    content: "";
-    position: absolute;
-    left: -186px;
-    width: 160px;
-    top: 24px;
-    height: 2px;
-
-    background-color: #000;
+    margin-left: 25px;
 }
 
 .use-funds{
@@ -916,17 +992,25 @@ a {
     margin-bottom: 70px;
 }
 
-.use-funds ul{
+.use-funds h3{
+    margin: 0;
+    margin-bottom: 31px;
+
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.custom-list-1{
     padding: 0;
     margin: 0;
     margin-left: 20px;
 }
 
-.use-funds li{
+.custom-list-1 li{
     margin-bottom: 13px;
 }
 
-.use-funds li::before{
+.custom-list-1 li::before{
     content: "";
     position: absolute;
     height: 8px;
@@ -935,14 +1019,6 @@ a {
     margin-left: -18px;
     background-color: #000;
     transform: rotate(45deg);
-}
-
-.use-funds h3{
-    margin: 0;
-    margin-bottom: 31px;
-
-    font-size: 24px;
-    line-height: 30px;
 }
 
 .price-services{
@@ -957,27 +1033,27 @@ a {
     line-height: 30px;
 }
 
-.price-services table{        
+.custom-table-1{        
     width: 100%;
 
     border-collapse: collapse;
 }
 
-.price-services td{
-    width: 227px;
+.custom-table-1 td{
+    width: 50%;
     padding: 0;
     padding-top: 9px;
     padding-bottom: 10px;
     padding-left: 19px;
 }
 
-.price-services td:nth-child(2n){
+.custom-table-1 td:nth-child(2n){
     text-align: center;    
     padding-left: 0;
 }
 
-.price-services table,
-.price-services td{
+.custom-table-1,
+.custom-table-1 td{
     border: 2px solid #000;
 }
 
@@ -1003,6 +1079,202 @@ a {
     margin-right: 80px;
 }
 
+.modal{
+    position: fixed;
+    
+    color: #000;
 
+    background-color: #f8f3f0;
+    background-image: url("../img/bg-columns.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+    box-shadow: 0 30px 50px rgba(0,0,0, .7);
+}
+
+.modal-sig-in{
+    top: 120px;
+    left: 50%;
+
+    display: none;
+
+    margin-left: -230px;
+    width: 300px;
+    padding: 50px 80px;
+}
+
+.modal-sig-in h2{
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: -34px;
+
+    width: 22px;
+    height: 22px;
+
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 2px;
+
+    width: 19px;
+    height: 3px;
+
+    background-color: #d0d0d0;
+}
+
+.modal-close::before{
+    transform: rotate(45deg);
+}
+
+.modal-close::after{
+    transform: rotate(-45deg);
+}
+
+.modal-description{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.sig-in-form p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.sig-in-form input[type="login"],
+.sig-in-form input[type="password"]{
+    box-sizing: border-box;
+    width: 300px;
+    padding: 10px 15px;
+    padding-left: 40px;
+
+    font: inherit;
+    color: #000000;
+    text-transform: inherit; 
+
+    background-color: #f9f6f3;
+    border-color: #663d15;
+}
+
+.sig-in-form input:focus{
+    border-color: #663d15;
+}
+
+.sig-in-form .sig-in-help{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.sig-in-icon-user{
+    background-image: url(../img/user.png);
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.sig-in-icon-password{
+    background-image: url(../img/lock.png);
+    background-position: 270px center;
+    background-repeat: no-repeat;
+}
+
+.sig-in-checkbox{
+    position: relative;
+
+    padding-left: 30px;
+
+    cursor: pointer;
+}
+
+.sig-in-checkbox:hover,
+.sig-in-checkbox:focus{
+    color: #663d15;
+}
+
+.sig-in-checkbox input[type="checkbox"] + .checkbox-indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000;
+}
+
+.sig-in-checkbox input[type="checkbox"]:focus + .checkbox-indicator{
+    border-color: #663d15;
+    outline:  0 auto -webkit-focus-ring-color;
+}
+
+.sig-in-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.sig-in-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+    content: '';
+
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000;
+}
+
+.sig-in-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before{
+    transform: rotate(45deg);
+}
+.sig-in-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+    transform: rotate(-45deg);
+}
+
+.restore{
+    color: #000;
+    text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus{
+    text-decoration: none;
+}
+
+.sig-in-form .button{
+    width: 100%;
+    margin-right: 0;
+}
+
+
+.modal-map{
+    top: 50%;
+    left: 50%;
+
+    display: none;
+    width: 766px;
+    height: 561px;
+    margin-top: -280px;
+    margin-left: -390px;
+
+    border: 7px solid white;
+
+}
+
+.modal-map p{
+    margin: 0;
+}
 
 

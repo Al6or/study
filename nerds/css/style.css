@@ -48,11 +48,17 @@ a {
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+    height: auto;   
+}
+
 .container{
     width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 
 .visually-hidden{
     position: absolute;
