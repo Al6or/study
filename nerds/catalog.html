@@ -65,16 +65,28 @@
                         <legend class="head-fieldset">Сетка:</legend>
                         <ul class="grid-list">
                             <li class="grid-item">
-                                <input id="fl-grid-adaptive" type="radio" name="fl-grid" value="adaptive">
-                                <label for="fl-grid-adaptive">Адаптивная</label>
+                                <input class="visually-hidden" id="fl-grid-adaptive" type="radio" name="fl-grid"
+                                    value="adaptive" checked disabled>
+                                <label class="label-radio" for="fl-grid-adaptive">
+                                    <span class="indicator-radio"></span>
+                                    Адаптивная
+                                </label>
                             </li>
                             <li class="grid-item">
-                                <input id="fl-grid-fixed" type="radio" name="fl-grid" value="fixed">
-                                <label for="fl-grid-fixed">Фиксированная</label>
+                                <input class="visually-hidden" id="fl-grid-fixed" type="radio" name="fl-grid"
+                                    value="fixed">
+                                <label class="label-radio" for="fl-grid-fixed">
+                                    <span class="indicator-radio"></span>
+                                    Фиксированная
+                                </label>
                             </li>
                             <li class="grid-item">
-                                <input id="fl-grid-rubber" type="radio" name="fl-grid" value="rubber">
-                                <label for="fl-grid-rubber">Резиновая</label>
+                                <input class="visually-hidden" id="fl-grid-rubber" type="radio" name="fl-grid"
+                                    value="rubber">
+                                <label class="label-radio" for="fl-grid-rubber">
+                                    <span class="indicator-radio"></span>
+                                    Резиновая
+                                </label>
                             </li>
                         </ul>
                     </fieldset>
@@ -82,24 +94,41 @@
                         <legend class="head-fieldset">Особенности:</legend>
                         <ul class="special-list">
                             <li class="special-item">
-                                <input id="fl-features-slider" type="checkbox" name="slider">
-                                <label for="fl-features-slider">Слайдер</label>
+                                <input class="visually-hidden" id="fl-features-slider" type="checkbox" name="slider"
+                                    checked disabled>
+                                <label class="label-checkbox" for="fl-features-slider">
+                                    <span class="indicator-checkbox"></span>
+                                    Слайдер
+                                </label>
                             </li>
                             <li class="special-item">
-                                <input id="fl-features-profit" type="checkbox" name="profit">
-                                <label for="fl-features-profit">Блок преимуществ</label>
+                                <input class="visually-hidden" id="fl-features-profit" type="checkbox" checked
+                                    name="profit">
+                                <label class="label-checkbox" for="fl-features-profit">
+                                    <span class="indicator-checkbox"></span>
+                                    Блок преимуществ
+                                </label>
                             </li>
                             <li class="special-item">
-                                <input id="fl-features-news" type="checkbox" name="news">
-                                <label for="fl-features-news">Новости</label>
+                                <input class="visually-hidden" id="fl-features-news" type="checkbox" name="news">
+                                <label class="label-checkbox" for="fl-features-news">
+                                    <span class="indicator-checkbox"></span>
+                                    Новости
+                                </label>
                             </li>
                             <li class="special-item">
-                                <input id="fl-features-gallery" type="checkbox" name="gallery">
-                                <label for="fl-features-gallery">Галерея</label>
+                                <input class="visually-hidden" id="fl-features-gallery" type="checkbox" name="gallery">
+                                <label class="label-checkbox" for="fl-features-gallery">
+                                    <span class="indicator-checkbox"></span>
+                                    Галерея
+                                </label>
                             </li>
                             <li class="special-item">
-                                <input id="fl-features-basket" type="checkbox" name="basket">
-                                <label for="fl-features-basket">Корзина</label>
+                                <input class="visually-hidden" id="fl-features-basket" type="checkbox" name="basket">
+                                <label class="label-checkbox" for="fl-features-basket">
+                                    <span class="indicator-checkbox"></span>
+                                    Корзина
+                                </label>
                             </li>
                         </ul>
                     </fieldset>
@@ -149,7 +178,6 @@
                             </p>
                             <a class="button button-price" href="#">9 900 РУБ.</a>
                         </div>
-
                         <a href="#" class="demo-template">
                             <img src="img/img-sedona.jpg" alt="Шаблон Sedona" width="360" height="576">
                         </a>
@@ -242,7 +270,9 @@
 
     <footer class="main-footer">
         <section class="studio-address">
-            <img src="img/map.jpg" alt="Карта офиса Nerds design studio" width="1442" height="418">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1634779893474!5m2!1sru!2sru"
+                width="1442" height="418" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <div class="container">
                 <h2 class="visually-hidden">Контакты и расположение Nerds design studio</h2>
                 <article>
@@ -298,9 +328,9 @@
         </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal modal-message">
         <h2>Напишите нам</h2>
-        <form class="write-form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="message-form" action="#" method="POST">
             <p>
                 <label for="message-first-name">Ваше имя:</label>
                 <input id="message-first-name" type="text" name="first-name" placeholder="Имя Фамилия">
@@ -311,11 +341,15 @@
             </p>
             <p>
                 <label for="message-text">Текст письма:</label>
-                <input id="message-text" type="text" name="text" placeholder="В свободной форме">
+                <textarea id="message-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             </p>
-            <a class="button button-red" type="submit">Отправить</a>
+            <a href="#" class="button button-red" type="submit">Отправить</a>
         </form>
-        <button type="button">Закрыть</button>
+        <button class="modal-close" type="button">
+            <span class="visually-hidden">
+                Закрыть
+            </span>
+        </button>
     </section>
 </body>
 
