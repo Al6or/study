@@ -112,7 +112,7 @@
                     пн—пт: с 10:00 до 22:00<br>
                     сб—вс: с 10:00 до 19:00
                 </p>
-                <a class="button" href="map.html">Как проехать</a>
+                <a class="button button-contacts-map" href="map.html">Как проехать</a>
                 <a class="button" href="contacts.html">Обратная связь</a>
             </section>
 
@@ -225,15 +225,21 @@
 
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <p>
-            <img src="img\map.jpg" alt="Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8" width="1739" height="784">
-        </p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.654168778302!2d30.324424403167985!3d59.93788053140718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1544704404879"
+            width="766" height="561" allowfullscreen></iframe>
+        <!--<p>
+            <img src="img\map.jpg" alt="Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8" width="766" height="561">
+        </p> -->
         <button class="modal-close" type="button">
             <span class="visually-hidden">
                 Закрыть
             </span>
         </button>
     </section>
+
+    <script src="../barbershop/js/popup.js"></script>
+    <script src="../barbershop/js/map.js"></script>
 </body>
 
 </html>

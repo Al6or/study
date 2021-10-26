@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Магазин дизайн-студии «Nerds»</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize-min-0.1.css" rel="stylesheet">
+    <link href="css/style-min-0.1.css" rel="stylesheet">
 </head>
 
 <body class="inner-page">
@@ -20,12 +20,12 @@
                     <ul class="site-nav">
                         <li><a href="#">Студия</a></li>
                         <li><a href="#">Клиенты</a></li>
-                        <li><a>Магазин</a></li>
+                        <li class="site-nav-current"><a>Магазин</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
                     <ul class="basket-nav">
                         <li>
-                            <a href="">Корзина</a>
+                            <a class="basket-link" href="#">Корзина</a>
                         </li>
                     </ul>
                 </div>
@@ -48,7 +48,7 @@
                         <legend class="head-fieldset">Стоимость:</legend>
                         <ul class="price-list">
                             <li class="price-range">
-                                <input class="button-range" id="fl-price-range" type="range" name="range" value="range">
+                                <input class="button-range" id="fl-price-range" type="range" name="range" step="1" value="7500" min="0" max="15000">
                                 <label class="visually-hidden" for="fl-price-range">Диапазон</label>
                             </li>
                             <li class="price-item price-start">
@@ -143,7 +143,7 @@
                     <p class="head-fieldset">Сортировать:</p>
                     <div class="sort">
                         <ul class="sort-list">
-                            <li class="sort-list-item"><a enadled href="#">По цене</a></li>
+                            <li class="sort-list-item"><a href="#">По цене</a></li>
                             <li class="sort-list-item"><a href="#">По типу</a></li>
                             <li class="sort-list-item"><a href="#">По названию</a></li>
                         </ul>
@@ -281,7 +281,7 @@
                         <p class="address">191186, Санкт-Петербург,
                             ул. Б. Конюшенная, д. 19/8</p>
                         <p class="number-phone">тел. +7 (812) 275-75-75</p>
-                        <a class="button button-red" href="#">
+                        <a class="button button-red button-message" href="#">
                             Напишите нам
                         </a>
                     </div>
@@ -343,7 +343,7 @@
                 <label for="message-text">Текст письма:</label>
                 <textarea id="message-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             </p>
-            <a href="#" class="button button-red" type="submit">Отправить</a>
+            <button class="button button-red" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button">
             <span class="visually-hidden">
@@ -351,6 +351,8 @@
             </span>
         </button>
     </section>
+    
+    <script src="../nerds/js/popup-min-0.1.js"></script>
 </body>
 
 </html>

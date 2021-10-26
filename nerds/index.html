@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Дизайн-студия «Nerds»</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize-min-0.1.css" rel="stylesheet">
+    <link href="css/style-min-0.1.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,11 +40,8 @@
                     <h2 class="visually-hidden">
                         Преимущества
                     </h2>
-                    <input class="visually-hidden" id="button-carousel-slide1" type="radio" name="img-carousel" checked>
-                    <input class="visually-hidden" id="button-carousel-slide2" type="radio" name="img-carousel">
-                    <input class="visually-hidden" id="button-carousel-slide3" type="radio" name="img-carousel">
                     <ul class="benefits-list">
-                        <li class="benefits-item img-slide1 slide">
+                        <li class="benefits-item img-slide1 slide" id="slide">
                             <div class="benefits-text">
                                 <p class="tagline">
                                     Долго, дорого,<br>
@@ -86,6 +83,8 @@
                     </ul>
                     <ul class="benefits-nav">
                         <li>
+                            <input class="visually-hidden" id="button-carousel-slide1" type="radio" name="img-carousel"
+                                checked>
                             <label for="button-carousel-slide1">
                                 <span class="indicator-radio-slide"></span>
                                 <span class="visually-hidden">
@@ -94,6 +93,7 @@
                             </label>
                         </li>
                         <li>
+                            <input class="visually-hidden" id="button-carousel-slide2" type="radio" name="img-carousel">
                             <label for="button-carousel-slide2">
                                 <span class="indicator-radio-slide"></span>
                                 <span class="visually-hidden">
@@ -102,6 +102,7 @@
                             </label>
                         </li>
                         <li>
+                            <input class="visually-hidden" id="button-carousel-slide3" type="radio" name="img-carousel">
                             <label for="button-carousel-slide3">
                                 <span class="indicator-radio-slide"></span>
                                 <span class="visually-hidden">
@@ -235,7 +236,7 @@
                         <p class="address">191186, Санкт-Петербург,
                             ул. Б. Конюшенная, д. 19/8</p>
                         <p class="number-phone">тел. +7 (812) 275-75-75</p>
-                        <a class="button button-red" href="#">
+                        <a class="button button-red button-message" href="#">
                             Напишите нам
                         </a>
                     </div>
@@ -297,7 +298,7 @@
                 <label for="message-text">Текст письма:</label>
                 <textarea id="message-text" name="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             </p>
-            <a href="#" class="button button-red" type="submit">Отправить</a>
+            <button class="button button-red" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button">
             <span class="visually-hidden">
@@ -305,7 +306,9 @@
             </span>
         </button>
     </section>
-
+    
+    <script src="../nerds/js/popup-min-0.1.js"></script>
+    <script src="../nerds/js/corusel-min-0.1.js"></script>
 </body>
 
 </html>

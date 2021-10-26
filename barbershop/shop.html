@@ -295,6 +295,39 @@
         </div>
     </footer>
 
+    <section class="modal modal-sig-in">
+        <h2>Личный кабинет</h2>
+        <p class="modal-description">Введите свой логин и пароль</p>
+        <form class="sig-in-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+                <label class="visually-hidden" for="form-sign-up-login">Логин</label>
+                <input class="sig-in-icon-user" name="login" id="form-sign-up-login" type="login"
+                    placeholder="email@email.com">
+            </p>
+            <p>
+                <label class="visually-hidden" for="form-sign-up-password">Пароль</label>
+                <input class="sig-in-icon-password" name="password" id="form-sign-up-password" type="password"
+                    placeholder="********">
+            </p>
+            <p class="sig-in-help">
+                <label class="sig-in-checkbox" for="form-sign-up-remember">
+                    <input class="visually-hidden" name="remember" id="form-sign-up-remember" type="checkbox">
+                    <span class="checkbox-indicator"></span>
+                    Запомнить меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button">
+            <span class="visually-hidden">
+                Закрыть
+            </span>
+        </button>
+    </section>
+
+    <script src="../barbershop/js/popup.js"></script>
+
 </body>
 
 </html>
