@@ -18,6 +18,3 @@ function changeStyleSlide(evt) {
         }
     }
 }
-
-
-
